@@ -18,3 +18,23 @@ function getRandomInt(max) {
 let input = prompt(`Enter a number between 1 and 10`)
 
 // Write the recipe (algorithm) in the comments. Then, write the code.
+
+// Store a random integer between 1-10 in memory
+let random = getRandomInt(10)
+
+// Write the random integer to the JavaScript console in Chrome
+console.log(`The random number is ${random}`)
+
+// Write the number the user entered to the Javascript console
+console.log(`You entered ${input}`)
+
+// If the user did not enter a number between 1-10, display an error
+if (input < 1 || input > 10) {
+  console.log(`You're pretty bad at following directions...`)
+} else if (input == random) {
+  // If the user guessed the number, display "YOU WIN!"
+  console.log(`YOU WIN!`)
+} else {
+  // If the user did not guess the number, display "SORRY!"
+  console.log(`SORRY!`)
+}

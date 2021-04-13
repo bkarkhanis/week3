@@ -8,12 +8,24 @@
 // Write the recipe (algorithm) in the comments. Then, write the code.
 
 // Store a simple social media profile in memory
+let profile = {
+    name: `Brian`
+    location: {
+        city: `Chicago`
+        state: `Illinois`
+}
+console.log(profile)
 
 // Retrieve the name from the profile, store it in memory
+let profileName = profile.name
 
 // Display the name in the console
+console.log(`Name: ${profilename}`)
 
 // Retrieve the location, store it in a memory
+let profileLocation = profile.location
+//console.log(`Location: ${profileLocation}`)
+console.log(`Location: ${profile.location.city}, ${profile.location.state}`)
 
 // Use the location to write the city and state, in a human-readable
 // format, to the JavaScript console
